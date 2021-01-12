@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vivaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+    <ul class="menu">
+        <li class="links"><a href="#welcome">HOME</a></li>
+        <li class="links"><a href="#MyPhotos">MyPhotos</a></li>
+        <li class="links"><a href="#SpecialMoments">SpecialMoments</a></li>
+        <li class="links"><a href="#AboutMe">AboutMe</a></li>
+        <li class="links"><a href="ChatWithMe">Chat With Me</a></li>
+        <li class="links"><a href="Myvideos">MyVideos</a></li>
+
+    </ul>
+
+    <section id="welcome">
+        <div class="parallax-inner">
+            <img src="profile%20pic.jpg" class="profile" />
+            <h1>I Am <br><span id="name">Vivaan(Full of Life)</span></h1>
+            <h2> I am the God's Greatest Gift to my parents</h2>
+        </div>
+
+    </section>
+
+
+
+    <section id="AboutMe">
+        <h1>Hi!</h1>
+        <div class="line"></div>
+        <p>Hi My name is Vivaan Dad.
+            this is my webpage you can find here interesting things about me.<br><br>
+            -----------Welcome in my World------------------</p>
+    </section>
+
+    <section id="MyPhotos">
+        <h1>!!!!!!!My Awesome Photos!!!!!!</h1>
+        <div class="line"></div>
+        <p>My photos with different Costumes</p>
+        <span> <img id="mypicssection" src="pose5.jpg" width="200" height="150"> </span>
+        <span> <img id="mypicssection" src="pose6.jpg" width="200" height="150"></span>
+        <span> <img id="mypicssection" src="pose7.jpg" width="200" height="150"></span>
+        <img id="mypicssection" src="pose8.jpg" width="200" height="150">
+        <br><br>
+        <img id="mypicssection" src="pose9.jpg" width="200" height="150">
+        <img id="mypicssection" src="pose10.jpg" width="200" height="150">
+        <img id="mypicssection" src="pose11.jpg" width="200" height="150">
+        <img id="mypicssection" src="pose12.jpg" width="200" height="150">
+        <img id="mypicssection" src="pose13.jpg" width="200" height="150">
+        <img id="mypicssection" src="pose14.jpg" width="200" height="150">
+        <img id="mypicssection" src="pose15.jpg" width="200" height="150">
+
+    </section>
+
+    <section id="SpecialMoments">
+        <h1>Here are my some special moments!</h1>
+        <div class="line"></div>
+
+
+        <img id="mainimg" src="new%20born.jpg" width="200" height="150">
+        <script type='text/javascript'>
+            var reasons = [
+
+                "its me in kanha look",
+                "its me cool dude........choclate boy",
+                "OMG....my decent look",
+                "My special expression",
+                "its me in Subhash Chandra Bose look",
+                "its me in vitthal look",
+                "its me in business man look",
+                "looking smart in this look toooo",
+                "My girl look",
+                "yes...its play time",
+                "yes......i m foodlover"
+            ];
+
+            var myimg = document.getElementById('mainimg');
+            var imgarray = ["kanha.jpg", "pose1.jpg", "pose2.jpg", "pose4.jpg", "police.jpg", "vithhal.jpg", "businessman.jpg", "taklu.jpg", "girl.jpg", "play time.jpg", "food lover.jpg"];
+            var i = 1;
+
+            function nextslide() {
+                myimg.setAttribute("src", imgarray[i]);
+                document.getElementById("reasontext").innerHTML = reasons[i];
+                i++;
+            }
+
+        </script>
+        <div>
+            <button type="button" onclick="nextslide()"> Next </button>
+        </div>
+
+        <p id="reasontext"> "First time i see world"</p>
+
+
+    </section>
+
+    <section id="Myvideos">
+        <h1>Here are my some tiktok videos!</h1>
+        <div class="line"></div>
+        <video id="video1" width="320" height="240" controls="controls">
+            <source src="2020-05-12-213913391.mp4" type="video/mp4">
+            <source src="2020-05-12-213913391.ogg" type="video/ogg">
+
+
+        </video>
+
+        <button onclick="playPause()">caronaPlay/Pause</button>
+
+
+        <script type='text/javascript'>
+            var myVideo = document.getElementById("video1");
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+        </script>
+
+        <video id="video2" width="320" height="240" controls="controls">
+            <source src="apna%20time.mp4" type="video/mp4">
+            <source src="apna%20time.ogg" type="video/ogg">
+
+
+        </video>
+
+        <button onclick="playPause()">apnaPlay/Pause</button>
+
+
+        <script type='text/javascript'>
+            var myVideo = document.getElementById("video2");
+
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+        </script>
+        <video id="video3" width="320" height="240" controls="controls">
+            <source src="dadisong.mp4" type="video/mp4">
+            <source src="dadisong.ogg" type="video/ogg">
+
+
+        </video>
+
+        <button onclick="playPause()">Play/Pause</button>
+
+
+        <script type='text/javascript'>
+            var myVideo = document.getElementById("video3");
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+        </script>
+        <video id="video4" width="320" height="240" controls="controls">
+            <source src="carona.mp4" type="video/mp4">
+            <source src="carona.ogg" type="video/ogg">
+
+
+        </video>
+
+        <button onclick="playPause()">Play/Pause</button>
+
+
+        <script type='text/javascript'>
+            var myVideo = document.getElementById("video4");
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+        </script>
+
+
+    </section>
+
+
+    <section id="ChatWithMe">
+        <h1>You can ask anything about me here!!!!!!</h1>
+        <div class="line"></div>
+        <iframe allow="microphone;" width="350px" height="500px" src="https://console.dialogflow.com/api-client/demo/embedded/8cd58015-cf61-4108-89d1-59f9fd3c55f6">
+        </iframe>
+    </section>
+
+</body>
+
+</html>
